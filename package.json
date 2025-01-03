@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joakimch/archivers-common"
+    "url": "git+https://github.com/joakimch/archivers-common.git"
   },
   "dependencies": {
     "jlc-cdp": "^0.9.7"
