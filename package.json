@@ -2,7 +2,7 @@
   "name": "archivers-common",
   "main": "./archivers-common.js",
   "type": "module",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Common functions for my AI art archivers.",
   "license": "MIT",
   "repository": {
@@ -10,6 +10,6 @@
     "url": "https://github.com/joakimch/archivers-common"
   },
   "dependencies": {
-    "jlc-cdp": "^0.9.4"
+    "jlc-cdp": "^0.9.6"
   }
 }
