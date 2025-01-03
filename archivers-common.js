@@ -124,11 +124,10 @@ async function initializeIntercept({initialUrl, catchResponses, responseReceived
       const {info} = await initChrome(cfg)
       return info.webSocketDebuggerUrl
     } catch (error) {
+      console.error(error)
       if (error.toString().startsWith(`Error: Can't connect to the DevTools protocol`)) {
-        console.error(error.cause)
         console.error(`Could not connect. This usually means that your browser was already running (but without having the CDP port set). If that's the case just close it and run this program again, it will then launch it for you with the correct CDP port configured.`)
       } else {
-        console.error(error)
         console.error(`Something went wrong when launching (or connecting to) your browser. Is this the correct path? "${cfg.chromiumPath}"\nIf not then change it in "${cfg.cfgFileName}".`)
       }
       process.exit(1)
